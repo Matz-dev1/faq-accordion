@@ -1,9 +1,9 @@
 import { useState } from 'react';
 import plusIcon from '../assets/images/icon-plus.svg';
 import minusIcon from '../assets/images/icon-minus.svg';
-import { questions } from '../data/faqData';
 
-function Questions() {
+
+function Questions({questions}) {
   const [openIndex, setOpenIndex] = useState(null);
 
   const toggleAnswer = (index) => {

@@ -1,7 +1,7 @@
 import starIcon from '../assets/images/icon-star.svg';
 import Questions from './Questions';
 
-function FaqContainer(){
+function FaqContainer({ questions }){
   return (
     <div className='faqWrapper'>
       <div>
@@ -9,7 +9,7 @@ function FaqContainer(){
         <span className='faqTitle'>FAQs</span>
       </div>
       <div>
-        <Questions/>
+        <Questions questions={questions}/>
       </div>
     </div>
   )
