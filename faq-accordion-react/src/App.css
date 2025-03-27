@@ -1,38 +1,62 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap');
+
+.faqWrapper {
+  width: 30%;
+  background-color: white;
+  text-align: start;
+  position: absolute;
+  top: 20%;
+  left: 33%;
+  border-radius: 1em;
+  padding: 2%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.starIcon {
+  width: 32px;
+  height: 32px;
+  padding-left: 5%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+body {
+  background-color: #f9f0ff;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 0.95em;
   min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.faqTitle {
+  font-size: 3.5em;
+  padding-bottom: 5%;
+  padding-left: 8%;
+  font-weight: bold;
+}
+.questionItem {
+  padding-bottom: 2%;
+}
+
+.questionHeader {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+  width: 100%;
 }
 
-.App-link {
-  color: #61dafb;
+.questionHeader h3 {
+  display: inline-block;
+  width: fit-content;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.questionHeader h3:hover {
+  color: #e266f2;
+  transition: color 0.3s ease;
 }
+
+.questionHeader h3:hover, .questionHeader img:hover {
+  cursor: pointer;
+}
+
+
+
